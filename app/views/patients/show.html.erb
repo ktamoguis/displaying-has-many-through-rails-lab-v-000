@@ -3,6 +3,5 @@
 <h2><%= @patient.name %> </h2>
 
 <% @patient.doctors.each do |doctor| %>
-  <% binding.pry %>
   <%= link_to doctor.name, doctor_path(doctor) %><br>
 <% end %>
